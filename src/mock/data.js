@@ -58,13 +58,13 @@ export const skills = [
 
 export const projects = [
   {
-    title: "Hospital Treatment Cost Prediction",
-    subtitle: "ML-Powered Cost Estimation",
-    summary: "Machine learning model to predict hospital treatment costs based on patient demographics and medical attributes with an interactive Streamlit interface.",
-    tags: ["Python", "Pandas", "Scikit-learn", "Streamlit"],
+    title: "Sales Forecasting using Machine Learning",
+    subtitle: "ML-Powered Demand Prediction",
+    summary: "Built a sales forecasting pipeline using a 3 million+ row real-world retail dataset. Developed a Stacking Ensemble model combining multiple regression algorithms to improve prediction performance.",
+    tags: ["Python", "Pandas", "NumPy", "Scikit-learn"],
     year: "2026",
     role: "Developer",
-    metric: "Real-time predictions",
+    metric: "3M+ rows processed",
     link: "#",
   },
   {
