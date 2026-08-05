@@ -36,11 +36,11 @@ export const skills = [
   },
   {
     category: "Machine Learning",
-    items: ["Scikit-learn", "Regression", "Classification", "Ensemble Learning", "Feature Engineering", "Data Preprocessing", "Model Evaluation"],
+    items: ["Scikit-learn", "XGBoost", "LightGBM", "Regression", "Classification", "Ensemble Learning", "Feature Engineering", "Data Preprocessing", "Model Evaluation"],
   },
   {
     category: "Deep Learning",
-    items: ["TensorFlow", "Keras", "ANN", "CNN", "RNN", "LSTM", "Keras Tuner"],
+    items: ["TensorFlow", "Keras", "ANN", "CNN", "RNN", "LSTM", "GRU", "Keras Tuner"],
   },
   {
     category: "Data Science",
