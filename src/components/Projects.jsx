@@ -14,18 +14,18 @@ function ProjectRow({ project, idx }) {
         href={project.link}
         className="group block border-b border-neutral-200 py-7 lg:py-8"
       >
-        <div className="grid grid-cols-12 gap-4 lg:gap-8 items-baseline">
-          <div className="col-span-1">
+        <div className="grid grid-cols-12 gap-3 lg:gap-8 items-baseline">
+          <div className="col-span-1 col-start-1 row-start-1">
             <span className="font-mono text-xs text-neutral-400 group-hover:text-neutral-900 transition-colors">
               {num}
             </span>
           </div>
-          <div className="col-span-5">
-            <span className="font-serif text-2xl lg:text-3xl tracking-tight text-neutral-900 leading-snug transition-transform duration-500 group-hover:translate-x-1 inline-block">
+          <div className="col-span-10 lg:col-span-5 col-start-2 lg:col-start-2 row-start-1">
+            <span className="font-serif text-xl sm:text-2xl lg:text-3xl tracking-tight text-neutral-900 leading-snug transition-transform duration-500 group-hover:translate-x-1 inline-block">
               {project.title}
             </span>
           </div>
-          <div className="col-span-4">
+          <div className="col-span-12 lg:col-span-4 col-start-1 lg:col-start-7 row-start-2 lg:row-start-1">
             <span className="text-sm text-neutral-600 block">
               {project.summary}
             </span>
@@ -33,12 +33,12 @@ function ProjectRow({ project, idx }) {
               → {project.metric}
             </span>
           </div>
-          <div className="col-span-1">
+          <div className="hidden lg:block lg:col-span-1 lg:col-start-11 lg:row-start-1">
             <span className="font-mono text-xs text-neutral-500">
               {project.year}
             </span>
           </div>
-          <div className="col-span-1 flex justify-end">
+          <div className="col-span-1 col-start-12 row-start-1 flex justify-end">
             <span
               className="inline-flex h-9 w-9 items-center justify-center rounded-full border transition-all duration-300"
               onMouseEnter={() => setHovered(true)}
@@ -74,6 +74,9 @@ function ProjectRow({ project, idx }) {
           <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-neutral-500 px-2 py-1">
             {project.role}
           </span>
+          <span className="lg:hidden font-mono text-[10px] uppercase tracking-[0.14em] text-neutral-500 px-2 py-1">
+            {project.year}
+          </span>
         </div>
       </a>
     </Reveal>
@@ -94,11 +97,11 @@ export default function Projects() {
           </div>
         </Reveal>
 
-        <div className="flex justify-between items-baseline mb-12">
+        <div className="flex justify-between items-baseline gap-4 mb-12">
           <RevealText
             text="Things I've built."
             as="h2"
-            className="font-serif text-4xl lg:text-5xl tracking-tight text-neutral-900"
+            className="font-serif text-3xl sm:text-4xl lg:text-5xl tracking-tight text-neutral-900"
             stagger={50}
           />
           <Reveal delay={200}>
