@@ -9,7 +9,7 @@ export const profile = {
   available: true,
   socials: [
     { label: "GitHub", handle: "Yash12-cloud", url: "https://github.com/Yash12-cloud" },
-    { label: "LinkedIn", handle: "yash-nimje", url: "https://linkedin.com/in/yash-nimje" },
+    { label: "LinkedIn", handle: "yash-nimje", url: "https://www.linkedin.com/in/yash-nimje-838934342/" },
     { label: "Email", handle: "yashnimje2005@gmail.com", url: "mailto:yashnimje2005@gmail.com" },
   ],
 };
@@ -52,7 +52,7 @@ export const skills = [
   },
   {
     category: "Developer Tools",
-    items: ["Git", "GitHub", "Jupyter Notebook", "Google Colab", "VS Code"],
+    items: ["Git", "GitHub", "Jupyter Notebook", "Google Colab", "VS Code", "Claude Code", "OpenCode"],
   },
 ];
 
@@ -68,13 +68,13 @@ export const projects = [
     link: "#",
   },
   {
-    title: "Real Estate Price Prediction",
-    subtitle: "Data Scraper & ML Pipeline",
-    summary: "End-to-end pipeline: web scraper built with BeautifulSoup collects property listings, followed by regression models for price prediction.",
-    tags: ["Python", "BeautifulSoup", "Scikit-learn", "Streamlit"],
+    title: "Next Word Prediction",
+    subtitle: "LSTM-Based Language Model",
+    summary: "Deep learning model using LSTM neural networks to predict the next word in a sequence, trained on text corpus with real-time inference.",
+    tags: ["Python", "TensorFlow", "Keras", "LSTM", "NLP"],
     year: "2026",
     role: "Developer",
-    metric: "End-to-end ML pipeline",
+    metric: "Real-time word prediction",
     link: "#",
   },
   {
@@ -102,26 +102,7 @@ export const education = [
       "Active participant in hackathons and technical competitions",
     ],
   },
-  {
-    school: "Kamla Nehru Mahavidyalaya",
-    degree: "Higher Secondary Certificate (HSC)",
-    period: "2024",
-    location: "Nagpur, Maharashtra",
-    description: "Completed higher secondary education with strong academic performance.",
-    highlights: [
-      "Percentage: 74.5%",
-    ],
-  },
-  {
-    school: "Tejswini Vidya Mandir",
-    degree: "Secondary School Certificate (SSC)",
-    period: "2021",
-    location: "Nagpur, Maharashtra",
-    description: "Completed secondary school education.",
-    highlights: [
-      "Percentage: 84.5%",
-    ],
-  },
+
 ];
 
 export const achievements = [

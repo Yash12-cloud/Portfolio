@@ -89,7 +89,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Scroll cue */}
+        {/* Scroll cue + Resume */}
         <div
           className="mt-20 flex justify-between items-center animate-fade-in"
           style={{ animationDelay: '1100ms' }}
@@ -101,9 +101,15 @@ export default function Hero() {
             </span>
             <ArrowDown className="h-3 w-3 animate-bounce text-neutral-500" />
           </div>
-          <span className="font-mono text-[11px] text-neutral-400">
-            (01) — Introduction
-          </span>
+          <a
+            href="https://drive.google.com/file/d/1L5Z75Hy1P1MwF2J_EGHsmoqL0wkdqHNO/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-2 border border-neutral-300 rounded-full px-5 py-2 font-mono text-[11px] uppercase tracking-[0.12em] text-neutral-700 hover:bg-neutral-900 hover:text-white transition-all duration-300"
+          >
+            View Resume
+            <span className="group-hover:translate-x-0.5 transition-transform duration-300">→</span>
+          </a>
         </div>
       </div>
     </section>
